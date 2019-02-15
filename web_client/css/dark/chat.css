@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +7,8 @@
 }
 
 body {
-    font: 15px Ubuntu Mono, monospace;
-    background: #000;
+    font: 15px "PT Sans", Sans-Serif;
+    background: #111;
 }
 
 #space {
@@ -21,29 +23,29 @@ body {
 #settings {
     display: inline-block;
     position: fixed;
-    font: 18px Ubuntu Mono, monospace;
+    font: 18px "PT Sans", Sans-Serif;
     background: url(/images/settings.png) no-repeat;
     background-size: 24px;
     background-position: center;
     background-color: #222;
     color: #fff;
     border-radius: 16px;
-    border: 3px solid #fff;
+    border: none;
     margin: 8px;
     width: 44px;
     height: 44px;
     bottom: 0;
     right: 0;
+    box-
 }
 
 #message_send_form {
     display: block;
     position: fixed;
-    font: 18px Ubuntu Mono, monospace;
+    font: 18px "PT Sans", Sans-Serif;
     background: #222;
     color: #fff;
     border-radius: 16px;
-    border: 3px solid #fff;
     margin: 8px;
     padding: 10px;
     height: 44px;
@@ -65,7 +67,7 @@ body {
 #user {
     overflow: hidden;
     white-space: nowrap;
-    font: 18px Ubuntu Mono, monospace;
+    font: 18px "PT Sans", Sans-Serif;
     color: #fff;
     display: inline;
     font-weight: bold;
@@ -81,17 +83,17 @@ input, button, textarea {
 #editing {
     display: table-cell;
     white-space: nowrap;
-    font: 16px Ubuntu Mono, monospace;
+    font: 16px "PT Sans", Sans-Serif;
     font-style: italic;
     border: none;
     width: calc(100vw - 180px);
-    background: #C8E6C9;
+    background: #4ab14d;
 }
 
 #m {
     display: table-cell;
     white-space: nowrap;
-    font: 18px Ubuntu Mono, monospace;
+    font: 18px "PT Sans", Sans-Serif;
     border: none;
     width: calc(100vw - 180px);
 }
@@ -99,7 +101,7 @@ input, button, textarea {
 #send {
     display: table-cell;
     white-space: nowrap;
-    font: 16px Ubuntu Mono, monospace;
+    font: 16px "PT Sans", Sans-Serif;
     float: right;
     width: 20px;
     height: 20px;
@@ -116,10 +118,9 @@ input, button, textarea {
 }
 
 .myMessage {
-    font: 16px Ubuntu Mono, monospace;
+    font: 16px "PT Sans", Sans-Serif;
     margin: 12px 24px 0px 128px;
     padding: 8px;
-    border: 2px solid #fff;
     border-radius: 16px 4px 16px 16px;
     background: #4ab14d;
     white-space: pre-wrap;
@@ -128,10 +129,9 @@ input, button, textarea {
 }
 
 .theirMessage {
-    font: 16px Ubuntu Mono, monospace;
+    font: 16px "PT Sans", Sans-Serif;
     margin: 12px 128px 0px 24px;
     padding: 8px;
-    border: 2px solid #fff;
     border-radius: 4px 16px 16px 16px;
     background: #222;
     color: #fff;
@@ -157,7 +157,7 @@ input, button, textarea {
 #messages li.date {
     margin-top: 16px;
     border-radius: 0;
-    border: 0;
+    border: none;
     background: 0;
     text-align: center;
     color: #fff;
@@ -168,10 +168,9 @@ input, button, textarea {
     z-index: 1000;
     position: absolute;
     overflow: hidden;
-    border: 1px solid #CCC;
     white-space: nowrap;
-    background: #222;
-    color: #333;
+    background: #333;
+    color: #fff;
     padding: 3px 0;
     border-radius: 3px;
 }
@@ -193,7 +192,7 @@ input, button, textarea {
 }
 
 .modal {
-    font: 16px Ubuntu Mono, monospace;
+    font: 16px "PT Sans", Sans-Serif;
     display: none;
     position: fixed;
     z-index: 1;
@@ -212,7 +211,6 @@ input, button, textarea {
 
 #modal-content {
     margin: 10vh 64px;
-    border: 3px solid #fff;
     border-radius: 16px;
     position: fixed;
     bottom: 0;
@@ -243,7 +241,7 @@ input, button, textarea {
 }
 
 .modal-header {
-    border-bottom: 3px solid #fff;
+    border: none;
     border-radius: 13px 13px 0 0;
     background-color: #66BB6A;
     height: 36px;
@@ -260,9 +258,8 @@ input, button, textarea {
     width: 150px;
     bottom: 10px;
     position: absolute;
-    font: 16px Ubuntu Mono, monospace;
+    font: 16px "PT Sans", Sans-Serif;
     background: #66BB6A;
-    border: 2px solid #fff;
     border-radius: 16px ;
     padding: 8px;
     font-weight: bold;
@@ -274,9 +271,8 @@ input, button, textarea {
     width: 150px;
     bottom: 10px;
     position: absolute;
-    font: 16px Ubuntu Mono, monospace;
+    font: 16px "PT Sans", Sans-Serif;
     background: rgba(255, 89, 89, 0.8);
-    border: 2px solid #fff;
     border-radius: 16px ;
     padding: 8px;
     font-weight: bold;
@@ -315,7 +311,7 @@ option[value="never"] {
 }
 
 .one {
-    font: 24px Ubuntu Mono, monospace;
+    font: 24px "PT Sans", Sans-Serif;
     color: #222;
     float: left;
     width: 40%;
@@ -332,9 +328,8 @@ option[value="never"] {
     width: 128px;
     height: 32px;
     margin: 5px 0 0 64px;
-    border: 2px solid #fff;
     border-radius: 8px;
-    font: 16px Ubuntu Mono, monospace;
+    font: 16px "PT Sans", Sans-Serif;
 }
 
 .setting {
@@ -357,8 +352,7 @@ option[value="never"] {
 
 #color {
     text-align: center;
-    font: 16px Ubuntu Mono, monospace;
-    border: 2px solid #fff;
+    font: 16px "PT Sans", Sans-Serif;
     border-radius: 8px;
     display: inline-block;
     width: 72px;
@@ -376,8 +370,7 @@ option[value="never"] {
     display: block;
     position: relative;
     padding-left: 8px;
-    font: 16px Ubuntu Mono, monospace;
-    border: 2px solid #fff;
+    font: 16px "PT Sans", Sans-Serif;
     border-radius: 8px;
     width: 150px;
     height: 32px;
@@ -386,7 +379,7 @@ option[value="never"] {
 
 textarea #editing {
     border: none;
-    font: italic 15px Ubuntu Mono, monospace;
+    font: italic 15px "PT Sans", Sans-Serif;
     word-wrap: break-word;
     word-break: break-all;
     resize: none;
